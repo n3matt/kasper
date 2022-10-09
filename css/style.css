@@ -1189,8 +1189,9 @@ ul {
 
 .price-content .col .body p {
   border-bottom: 1px solid var(--main-color);
-  padding: 10px;
-  padding-bottom: 15px;
+  width: fit-content;
+  padding: 15px;
+  margin: auto;
   margin-bottom: 10px;
 }
 
