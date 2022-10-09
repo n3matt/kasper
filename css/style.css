@@ -92,6 +92,7 @@ ul {
 
 .header .toggle-menu {
   font-size: 20px;
+  color: #fff;
 }
 
 @media (min-width: 767px) {
@@ -727,7 +728,7 @@ ul {
   margin-top: -100px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .about img {
     bottom: -50px;
     margin-top: -50px;
@@ -1094,7 +1095,132 @@ ul {
 
 .skills-bottom .text h2 {
   margin-bottom: 10px;
+  font-size: 30px;
+}
+
+@media (max-width: 426px) {
+  .skills-bottom .text h2 {
+    font-size: 20px;
+  }
 }
 
 /*-------------| End Skills-bottom Section Styling |-------------*/
 
+
+
+/*-------------| Start Pricing Section Styling |-------------*/
+.price {
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+  padding-left: 25px;
+  padding-right: 25px;
+  text-align: center;
+}
+
+.price-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+  gap: 80px 60px;
+}
+
+.price-content .col {
+  padding: 15px 0;
+  margin: auto;
+  flex: 20%;
+}
+
+
+
+@media (max-width: 768px) {
+  .price-content .col {
+    flex: 40%;
+  }
+}
+
+@media (max-width: 425px) {
+  .price-content .col {
+    flex: 100%;
+  }
+}
+
+
+.price-content .col .head {
+  border-top: 1.3px solid var(--main-color);
+  border-bottom: 1px solid var(--main-color);
+  padding: 10px 5px;
+}
+
+.price-content .col .head p {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.price-content .col .head h2 {
+  position: relative;
+  font-size: 40px;
+}
+
+.price-content .col .head h2::before {
+  content: '$';
+  position: absolute;
+  font-size: 14px;
+  top: 10%;
+  left: 30%;
+}
+
+.price-content .col .head h2::after{
+  content: '/mo';
+  position: absolute;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  bottom: 0;
+  right: 15%;
+}
+
+.price-content .col .body {
+  padding: 10px 50px 0;
+  border-bottom: 1.3px solid var(--main-color);
+}
+
+.price-content .col .body p {
+  border-bottom: 1px solid var(--main-color);
+  padding: 10px;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+.price-content .col .body p:last-child {
+  margin-bottom: 0;
+  border: none;
+}
+
+
+.price-content .col .footer {
+  margin-top: 40px;
+}
+
+
+.price-content .col .footer button {
+  border: 1px solid var(--main-color);
+  padding: 10px 25px;
+  background-color: #fff;
+}
+
+.price .contact p{
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 35px;
+}
+
+.price .contact a {
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--main-color);
+  padding: 10px 25px;
+}
+/*-------------| End Pricing Section Styling |-------------*/
