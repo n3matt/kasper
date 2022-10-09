@@ -1218,7 +1218,7 @@ ul {
   margin-bottom: 35px;
 }
 
-.price .contact a {
+.price .contact #cont {
   text-decoration: none;
   color: #fff;
   background-color: var(--main-color);
