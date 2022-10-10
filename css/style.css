@@ -306,6 +306,7 @@ ul {
   font-size: 35px;
   text-align: center;
   margin-bottom: 70px;
+  font-weight: normal;
   text-transform: uppercase;
   position: relative;
 }
@@ -1234,7 +1235,7 @@ ul {
 
 
 
-/*-------------| Start Skills-bottom Section Styling  |-------------*/
+/*-------------| Start Pricing-bottom Section Styling  |-------------*/
 
 .price-bottom {
   padding-top: var(--padding);
@@ -1267,7 +1268,7 @@ ul {
 }
 
 .price-bottom .form {
-  width: 50%;
+  width: 70%;
   margin: 0;
   padding: 0;
   position: relative;
@@ -1275,11 +1276,16 @@ ul {
 
 .price-bottom .form input{
   background-color: transparent;
-  border: 1px solid #fff;
+  outline: 1px solid #fff;
   padding: 10px 20px;
   width: 100%;
   color: #fff;
   margin: auto;
+  border: none;
+}
+
+.price-bottom .form input:focus {
+  outline: 1px solid var(--main-color);
 }
 
 .price-bottom .form input::placeholder {
@@ -1296,7 +1302,6 @@ ul {
   right: 0;
   top: 50%;
   transform: translateY(-50%);
-  border-right: 1px solid #fff;
   text-transform: uppercase;
   margin: auto;
 }
@@ -1323,15 +1328,178 @@ ul {
     margin-top: 40px;
     border: 1px solid #fff;
     width: 100%;
-  }
-
-  
+  }  
 }
 
 .price-bottom .text {
   color: #fff;
 }
 
+/*-------------| End Pricing-bottom Section Styling  |-------------*/
+
+
+
+
+/*-------------| Start Contact-us Section Styling  |-------------*/
+.contact-us {
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+  padding-left: 25px;
+  padding-right: 25px;
+} 
+
+.contact-us .container {
+  text-align: center;
+}
+
+.contact-us .content {
+  display: flex;
+  align-items: flex-start;
+  gap: 80px 50px;
+}
+
+@media (max-width: 767px) {
+  .contact-us .content {
+    flex-direction: column;
+  }
+}
+
+.contact-us .content .form {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 70%;
+  gap: 40px;
+}
+@media (max-width: 767px) {
+  .contact-us .content  .form{
+    width: 100%;
+  }
+}
+
+.contact-us .content .form * {
+  border: none;
+  padding: 20px;
+  outline: 1px solid #ccc;
+}
+
+.contact-us .content .form *:focus {
+  outline: 1px solid var(--main-color);
+}
+
+.contact-us .content .form *::placeholder {
+  color: #222;
+  text-transform: uppercase;
+}
+
+.contact-us .content .form textarea {
+  resize: none;
+  height: 200px;
+}
+
+.contact-us .content .address {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+@media (max-width: 767px) {
+  .contact-us .content .address{
+    width: 100%;
+    text-align: center;
+    gap: 30px;
+  }
+}
+
+.contact-us .content .address * {
+  margin-bottom: 15px;
+}
+
+.contact-us .content .address h4 {
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
+.contact-us .content .address p {
+  font-size: 12px;
+  color: #999;
+}
+
+.contact-us button {
+  background-color: var(--main-color);
+  outline: none;
+  border: none;
+  color: #fff;
+  padding: 15px 20px;
+  margin-top: 40px;
+  text-transform: uppercase;
+}
+
+@media (max-width: 767px) {
+  .contact-us button {
+    padding: 20px;
+    width: 100%;
+  }
+}
+
+
+/*-------------| End Contact-us Section Styling  |-------------*/
+
+
+
+/*-------------| Start Footer Section Styling  |-------------*/
+footer {
+  padding-top: var(--padding);
+  padding-bottom: var(--padding);
+  background-image: url(../images/contact.jpg);
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  position: relative;
+}
+
+footer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .4);
+}
+
+footer .content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+footer .content img {
+  height: 40px;
+}
+
+footer .content h4 {
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-bottom: 1px solid #fff;
+}
+
+footer .content .social {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+  margin-top: -10px;
+}
+
+footer .content p span {
+  color: var(--main-color);
+}
+/*-------------| End Footer Section Styling  |-------------*/
 
 
 
