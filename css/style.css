@@ -1386,6 +1386,12 @@ ul {
   outline: 1px solid var(--main-color);
 }
 
+
+.contact-us input:focus::placeholder {
+  color: transparent;
+}
+
+
 .contact-us .content .form *::placeholder {
   color: #222;
   text-transform: uppercase;
